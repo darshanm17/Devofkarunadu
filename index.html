@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h2 id="logo">Student Protfolio</h2>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#" >Home</a>
+                </li>
+                <li><a href="#" onclick="
+                aboutmyself();
+                ">About</a></li>
+                <li><a href="#" onclick="
+                blogs();
+                ">Blogs</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <div class="aboutmy">
+
+
+        </div>
+    </main>
+    <script>
+        function aboutmyself(){
+            const content =document.querySelector(".aboutmy");
+            const display=content.innerHTML=`
+            <h3>HI Iam Darshan </h3>
+            <p>            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, nulla. Naam tho suna hi hoga</p>
+            `
+        }
+        function blogs(){
+            const content =document.querySelector(".aboutmy");
+            const display=content.innerHTML=`
+            <h3>The dummy bllog </h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, nulla.</p>
+            
+            <button onclick="         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam, nulla. Naam tho suna hi hoga</p>">ReadMore</button>`
+        }
+    </script>
+</body>
+</html>
