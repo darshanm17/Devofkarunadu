@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        body{
+           
+        }
+        header{
+            display:flex;
+            align-items: center;
+            justify-content: center;
+           
+
+        }
+        #text{
+            width: 500px;
+            height: 200px;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .container{
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Translate</h1>
+    </header>
+    <textarea name="" id="text" cols="30" rows="10" placeholder="write"></textarea>
+    <button onclick="
+    translate1();
+    ">
+        Enter
+    </button>
+    <div class="container">
+
+    </div>
+    <script>
+    function translate1(){
+        let doc=document.querySelector("#text");
+       let tra= doc.value;
+       if (tra==='a'){
+        tra='b'
+        
+       }
+       alert("hi");
+       let dis=document.querySelector(".container");
+       dis.innerHTML=`
+       <textarea id="text" >${tra}</textarea>   `
+
+
+    }
+    </script>
+</body>
+</html>
